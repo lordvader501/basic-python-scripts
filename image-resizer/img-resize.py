@@ -19,6 +19,6 @@ dim = (height, width)
 resized_img = cv.resize(img, (height,width), interpolation= cv.INTER_AREA)
 
 path2 = input("enter file name to save: ")
-cv.imwrite(os.path.join(os.path.dirname(os.path.abspath(__file__)),"results",f"{path2}.jpg"), resized_img)
+cv.imwrite(os.path.join(os.path.dirname(os.path.abspath(__file__)), "results", f"{path2}.jpg"), resized_img)
 
 cv.destroyAllWindows()
